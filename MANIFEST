@@ -5,3 +5,4 @@ README
 lib/Mail/Address/MobileJp.pm
 t/00_compile.t
 t/01_mobile.t
+META.yml                                 Module meta-data (added by MakeMaker)
