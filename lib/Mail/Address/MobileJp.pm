@@ -2,7 +2,7 @@ package Mail::Address::MobileJp;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 BEGIN {
     require Exporter;
@@ -66,7 +66,8 @@ docomo\.ne\.jp
 my $regex_vodafone = qr@^(?:
 jp\-[dhtckrnsq]\.ne\.jp|
 [dhtckrnsq]\.vodafone\.ne\.jp|
-^softbank\.ne\.jp
+softbank\.ne\.jp|
+disney.ne.jp
 )$@x; # end of qr@@
 
 my $regex_ezweb = qr@^(?:
@@ -128,7 +129,7 @@ Mail::Address::MobileJp - mobile email address in Japan
 =head1 DESCRIPTION
 
 Mail::Address::MobileJp is an utility to detect an email address is
-mobile (cellurar) email address or not.
+mobile (cellphone) email address or not.
 
 This module should be updated heavily :)
 
